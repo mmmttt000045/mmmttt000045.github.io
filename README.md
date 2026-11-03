@@ -1,15 +1,14 @@
-# 明泰的学术主页
+# Ming Tai
 
-[中文主页](https://mmmttt000045.github.io/) · [English](https://mmmttt000045.github.io/en/)
+[Academic homepage](https://mmmttt000045.github.io/) of Ming Tai, a PhD student at Renmin University of China (2026–Present).
 
-这是一个静态网站。修改后推送到 `main` 分支，GitHub Pages 会自动发布。
+The site is served by GitHub Pages from the root of the `main` branch. Pushing changes to that branch publishes the site.
 
-| 内容 | 文件 |
+| Content | File |
 | --- | --- |
-| 中文主页 | `index.html` |
-| 英文主页 | `en/index.html` |
-| 页面样式 | `assets/site.css` |
-| 本科简历公开版 | `assets/ming-tai-undergraduate-cv.pdf` |
-| 个人照片 | `assets/ming-tai.png` |
+| Profile, research, education, and honors | `index.html` |
+| Page styles | `assets/site.css` |
+| English curriculum vitae, including undergraduate experience | `assets/ming-tai-undergraduate-cv.pdf` |
+| Portrait | `assets/ming-tai.png` |
 
-更新教育经历、项目或奖项时，请同步修改两个语言版本。在仓库根目录运行 `python -m http.server 8000 --bind 127.0.0.1`，然后打开 [本地预览](http://127.0.0.1:8000/)。
+The previous English address at `/en/` redirects to the homepage. To preview changes locally, run `python -m http.server 8000 --bind 127.0.0.1` in the repository root and open the [local site](http://127.0.0.1:8000/).
