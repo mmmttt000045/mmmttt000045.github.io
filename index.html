@@ -3,12 +3,12 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Tai Ming (明泰) | Database Systems | Renmin University of China</title>
-  <meta name="description" content="Tai Ming (明泰) is a Ph.D. student in Database Systems at Renmin University of China, advised by Prof. Wei Lu at DEKE. His research focuses on transaction processing, query execution, and data infrastructure for AI agents.">
+  <title>Ming Tai (明泰) | Database Systems | Renmin University of China</title>
+  <meta name="description" content="Ming Tai is a Ph.D. student at Renmin University of China (2026–Present). His research interests include transaction processing, query execution, and database support for data agents.">
   <meta name="theme-color" content="#faf9f6">
   <meta property="og:type" content="profile">
-  <meta property="og:title" content="Tai Ming (明泰) | Database Systems | Renmin University of China">
-  <meta property="og:description" content="Ph.D. Student in Database Systems at Renmin University of China. Research and systems projects, education, and honors.">
+  <meta property="og:title" content="Ming Tai (明泰) | Database Systems | Renmin University of China">
+  <meta property="og:description" content="Ph.D. Student at Renmin University of China (2026–Present). Research projects, education, honors, and curriculum vitae.">
   <meta property="og:url" content="https://mmmttt000045.github.io/">
   <link rel="canonical" href="https://mmmttt000045.github.io/">
   <link rel="icon" href="./assets/monogram.svg" type="image/svg+xml">
@@ -19,8 +19,8 @@
   <header class="masthead">
     <div class="shell">
       <div class="bar">
-        <a class="brand" href="./" aria-label="Tai Ming, home">
-          <img class="monogram" src="./assets/monogram.svg" width="30" height="30" alt="" aria-hidden="true"><span class="brand-name">Tai Ming</span>
+        <a class="brand" href="./" aria-label="Ming Tai, home">
+          <span class="monogram" aria-hidden="true">mt</span><span class="brand-name">Ming Tai</span>
         </a>
         <nav class="navigation" aria-label="Main navigation">
           <a href="#projects">Research</a>
@@ -32,48 +32,43 @@
   </header>
   <main id="main" class="shell">
     <section class="hero" aria-labelledby="name">
-      <div class="hero-body">
-        <h1 id="name">Tai Ming <span class="native-name" lang="zh-CN">明泰</span></h1>
-        <p class="affiliation">Ph.D. Student in Database Systems, <a href="https://en.ruc.edu.cn/">Renmin University of China</a></p>
-        <p class="affiliation-sub">
-          <a href="https://deke.ruc.edu.cn/">Key Laboratory of Data Engineering and Knowledge Engineering (DEKE)</a> · Advised by <a href="https://deke.ruc.edu.cn/kytd/zzry/96cb94af916145319b459be6c94acd2c.htm">Prof. Wei Lu</a>
-        </p>
-        <p class="bio">I study database systems, focusing on transaction processing, query execution, and data infrastructure for AI agents. My current research explores semantic validation and versioned metric management for data agents operating over evolving relational data, building on prior work in workload-aware transaction routing for multi-writer databases.</p>
-        <nav class="actions" aria-label="Contact and profile links">
-          <a href="mailto:mingtai@ruc.edu.cn">mingtai@ruc.edu.cn</a>
-          <a class="github-profile" href="https://github.com/mmmttt000045">
-            <img src="./assets/github-invertocat.svg" width="98" height="96" alt=""><span>GitHub</span>
-          </a>
-          <a href="https://rushdb-lab.github.io/">RushDB Lab</a>
-        </nav>
+      <div class="profile-heading">
+        <h1 id="name">Ming Tai <span class="native-name" lang="zh-CN">(明泰)</span></h1>
+        <a class="university-link" href="https://en.ruc.edu.cn/">
+          <img src="./assets/ruc-emblem.png" width="156" height="156" alt="Renmin University of China">
+        </a>
       </div>
-      <a class="university-link" href="https://en.ruc.edu.cn/" aria-label="Renmin University of China">
-        <img src="./assets/ruc-emblem.png" width="156" height="156" alt="Renmin University of China">
-      </a>
+      <p class="affiliation">Ph.D. Student, Renmin University of China</p>
+      <p class="profile-period">2026–Present</p>
+      <p class="bio">I study database systems, with a focus on query execution and transaction processing. I am interested in how multi-writer databases route transactions that access the same data. My current research explores shared memory and semantic validation for data agents over evolving data.</p>
+      <nav class="actions" aria-label="Profile resources">
+        <a href="mailto:mingtai@ruc.edu.cn">mingtai@ruc.edu.cn</a>
+        <a href="./assets/Ming-Tai-CV.pdf" target="_blank" rel="noopener">Curriculum vitae <span class="file-type">(PDF)</span><span class="visually-hidden">, opens in a new tab</span></a>
+        <a class="github-profile" href="https://github.com/mmmttt000045">
+          <img src="./assets/github-invertocat.svg" width="98" height="96" alt=""><span>GitHub</span>
+        </a>
+      </nav>
     </section>
 
-    <section class="section section-grid" id="projects" aria-labelledby="research-title">
-      <div class="section-header">
-        <h2 id="research-title">Research &amp; systems</h2>
-      </div>
+    <section class="section project-section" id="projects" aria-labelledby="research-title">
+      <h2 id="research-title">Research projects</h2>
       <div class="project-list">
         <article class="project">
-          <h3>Semantic memory and validation for data agents</h3>
-          <p class="project-label">MAVRA · PostgreSQL &amp; Rust · 2026–Present</p>
-          <p>A Rust and PostgreSQL prototype for sharing versioned metric and feature definitions across data agents. MAVRA tracks whether registered definitions remain semantically valid after underlying data updates and verifies which revision a query executes against.</p>
-          <div class="resource-links">
-            <a href="https://github.com/mmmttt000045/agent4db-adapter">MAVRA source code (agent4db-adapter)</a>
-          </div>
+          <h3>Shared memory for data agents</h3>
+          <p class="project-label">MAVRA · 2026–Present</p>
+          <p>I built MAVRA in Rust to let data agents share versioned definitions of metrics and features in PostgreSQL. The prototype tracks whether each definition remains valid after a data update and checks which revision a query uses.</p>
+          <div class="resource-links"><a href="https://github.com/mmmttt000045/agent4db-adapter">MAVRA source code</a></div>
         </article>
         <article class="project">
-          <h3>Workload-aware transaction routing in multi-writer databases</h3>
-          <p class="project-label">KingbaseRAC · RUC &amp; Kingbase Collaboration · 2025</p>
-          <p>Implemented a workload-aware transaction router in C++ for multi-writer clusters in a collaboration between RUC’s database systems group and Kingbase. The router partitions a graph of transactions and their accessed data using METIS, directing overlapping access patterns to the same node to minimize cross-node communication.</p>
+          <h3>Transaction routing in multi-writer databases</h3>
+          <p class="project-label">KingbaseRAC · 2025</p>
+          <p>In a collaboration between RUC’s database systems group and Kingbase, I implemented a workload-aware router in C++. The router uses METIS to partition a graph of transactions and the data they access. It directs transactions with overlapping access patterns to the same node to limit cross-node communication.</p>
+          <div class="resource-links"><span class="project-note">Industry collaboration · C++</span></div>
         </article>
         <article class="project">
-          <h3>Relational query execution, indexing, and vector search</h3>
-          <p class="project-label">RushDB · OceanBase &amp; RucBase · 2024–2025</p>
-          <p>Led the RushDB team in national database system competitions. Implemented B+ tree indexes, two-phase locking, and write-ahead logging recovery with checkpoints in RucBase, and extended MiniOB with nested and correlated subqueries alongside vector search optimizations in OceanBase’s VSAG library.</p>
+          <h3>Query execution, indexing, and recovery</h3>
+          <p class="project-label">RushDB · 2024–2025</p>
+          <p>My RushDB teammates and I implemented B+ tree indexes, concurrency control, and log-based recovery in RucBase. For the OceanBase Database Competition, we extended MiniOB to handle nested and correlated subqueries and optimized vector search in OceanBase.</p>
           <div class="resource-links">
             <a href="https://github.com/RushDB-Lab/CSCC-DB-Rucbase-2024">RucBase implementation</a>
             <a href="https://github.com/RushDB-Lab/oceanbase">OceanBase implementation</a>
@@ -82,76 +77,64 @@
       </div>
     </section>
 
-    <section class="section section-grid" id="education" aria-labelledby="education-title">
-      <div class="section-header">
-        <h2 id="education-title">Education &amp; experience</h2>
-      </div>
-      <ul class="record-list">
-        <li>
-          <span class="period">2026–Present</span>
-          <div>
+    <div class="record-grid">
+      <section class="section record" id="education" aria-labelledby="education-title">
+        <h2 id="education-title">Education</h2>
+        <ul class="record-list">
+          <li>
+            <span class="period">2026–Present</span>
             <h3>Renmin University of China</h3>
-            <p>Ph.D. Student in Database Systems</p>
+            <p>Ph.D. Student (Database Systems)</p>
             <p>Advised by <a href="https://deke.ruc.edu.cn/kytd/zzry/96cb94af916145319b459be6c94acd2c.htm">Prof. Wei Lu</a> · <a href="https://deke.ruc.edu.cn/" title="Key Laboratory of Data Engineering and Knowledge Engineering (MOE)" aria-label="DEKE, Key Laboratory of Data Engineering and Knowledge Engineering (MOE)">DEKE</a></p>
-          </div>
-        </li>
-        <li>
-          <span class="period">2024</span>
-          <div>
-            <h3>OceanBase, Ant Group</h3>
-            <p>Database Research Intern · Undergraduate research internship starting July 2024.</p>
-          </div>
-        </li>
-        <li>
-          <span class="period">2022–2026</span>
-          <div>
+          </li>
+          <li>
+            <span class="period">2022–2026</span>
             <h3>Chengdu University of Technology</h3>
-            <p>B.Eng. in Intelligent Science and Technology · Ranked 1st of 123 students (July 2025).</p>
-          </div>
-        </li>
-      </ul>
-    </section>
-
-    <section class="section section-grid" id="honors" aria-labelledby="honors-title">
-      <div class="section-header">
+            <p>B.Eng. in Intelligent Science and Technology</p>
+          </li>
+        </ul>
+      </section>
+      <section class="section record" id="honors" aria-labelledby="honors-title">
         <h2 id="honors-title">Selected honors</h2>
-      </div>
-      <ul class="record-list">
-        <li>
-          <span class="period">2025</span>
-          <div>
-            <h3>National Scholarship</h3>
-            <p>Undergraduate award, Chengdu University of Technology.</p>
-          </div>
-        </li>
-        <li>
-          <span class="period">2024, 2025</span>
-          <div>
-            <h3>National First Prize · 2nd Overall in 2025</h3>
-            <p>Database Management System Design, National College Computer System Competition (RushDB; consecutive National First Prizes).</p>
-          </div>
-        </li>
-        <li>
-          <span class="period">2025</span>
-          <div>
-            <h3>3rd Overall · Top Undergraduate Team</h3>
-            <p>Fourth OceanBase Database Competition (RushDB).</p>
-          </div>
-        </li>
-        <li>
-          <span class="period">Undergraduate</span>
-          <div>
-            <h3>Additional Competition Awards</h3>
-            <p>National First Prize, Fourth International Supply Chain Modeling Competition · Provincial First Prize, 14th Lanqiao Cup Programming Competition.</p>
-          </div>
-        </li>
-      </ul>
-    </section>
+        <ul class="record-list honors">
+          <li>
+            <span class="period">2025</span>
+            <div>
+              <h3>National Scholarship</h3>
+              <p>Undergraduate award, Chengdu University of Technology.</p>
+            </div>
+          </li>
+          <li>
+            <span class="period">2025</span>
+            <div>
+              <h3>National First Prize · 2nd Overall</h3>
+              <p>Database Management System Design, National College Computer System Competition (RushDB).</p>
+            </div>
+          </li>
+          <li>
+            <span class="period">2025</span>
+            <div>
+              <h3>3rd Overall · Top Undergraduate Team</h3>
+              <p>Fourth OceanBase Database Competition (RushDB).</p>
+            </div>
+          </li>
+          <li>
+            <span class="period">2024</span>
+            <div>
+              <h3>National First Prize</h3>
+              <p>Database Management System Design, National College Computer System Competition.</p>
+            </div>
+          </li>
+        </ul>
+      </section>
+    </div>
   </main>
   <div class="shell">
     <footer class="footer">
-      <span class="footer-name">Tai Ming <span class="footer-native" lang="zh-CN">明泰</span></span>
-      <span class="footer-meta">Renmin University of China</span>
+      <span class="footer-name">Ming Tai</span>
+      <nav aria-label="Additional resources">
+        <a href="https://rushdb-lab.github.io/">RushDB team</a>
+      </nav>
     </footer>
   </div>
 </body>
