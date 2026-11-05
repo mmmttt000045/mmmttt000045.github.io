@@ -31,17 +31,18 @@ h1, h2, h3 { text-wrap: balance; font-family: var(--serif); }
 .navigation a { color: var(--muted); font-size: .9rem; text-decoration: none; }
 .navigation a:hover { color: var(--wine); text-decoration: underline; }
 
-.hero { padding-block: clamp(38px, 4.8vw, 60px); }
-.profile-heading { display: flex; align-items: center; flex-wrap: wrap; gap: 12px clamp(14px, 1.8vw, 22px); }
+.hero { display: grid; grid-template-columns: minmax(0, 1fr) auto; column-gap: clamp(32px, 5vw, 64px); padding-block: clamp(38px, 4.8vw, 60px); }
+.profile-heading { grid-column: 1; }
 h1 { margin-left: -.035em; font-size: clamp(3.2rem, 5.2vw, 4.35rem); line-height: 1.12; font-weight: 500; letter-spacing: -.045em; }
 .native-name { display: inline-block; color: var(--muted); font: 400 .48em/1.2 "Noto Serif SC", "Songti SC", SimSun, serif; letter-spacing: 0; white-space: nowrap; }
-.university-link { display: block; flex: none; }
-.university-link img { display: block; width: clamp(30px, 3.4vw, 38px); height: auto; }
+.university-link { display: block; grid-column: 2; grid-row: 1 / 5; align-self: center; justify-self: end; }
+.university-link img { display: block; width: clamp(128px, 15vw, 156px); height: auto; }
 .affiliation { margin-top: 12px; font: 1.22rem/1.4 var(--serif); }
 .profile-period, .period { color: var(--wine); font-variant-numeric: tabular-nums; line-height: 1.5; }
 .profile-period { margin-top: 3px; font-size: .88rem; }
-.bio { margin-top: 18px; max-width: 65ch; line-height: 1.68; }
-.actions { margin-top: 16px; }
+.mentorship { grid-column: 1; margin-top: 12px; color: var(--muted); font-size: .94rem; line-height: 1.6; }
+.bio { grid-column: 1; margin-top: 18px; max-width: 65ch; line-height: 1.68; }
+.actions { grid-column: 1; margin-top: 16px; }
 .actions a, .resource-links a { font-size: .93rem; }
 .file-type { font-size: .85em; }
 .github-profile { display: inline-flex; align-items: center; gap: .5rem; }
@@ -69,7 +70,10 @@ h3 { font-size: 1.15rem; line-height: 1.4; font-weight: 600; letter-spacing: -.0
 .footer a { font-size: .85rem; }
 @media (max-width: 680px) {
   .bar { padding-block: 13px; }
-  .hero { padding-block: 30px; }
+  .hero { column-gap: 18px; padding-block: 30px; }
+  .university-link { grid-row: 1; }
+  .university-link img { width: clamp(64px, 14vw, 88px); }
+  .mentorship, .bio, .actions { grid-column: 1 / -1; }
   h1 { font-size: clamp(2.55rem, 7.6vw, 3.5rem); }
   .affiliation { font-size: 1.05rem; }
   .project-section { display: block; padding-block: 24px 27px; }
